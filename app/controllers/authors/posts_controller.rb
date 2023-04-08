@@ -5,14 +5,23 @@ module Authors
     # GET /posts
     def index
       @posts = current_author.posts
+      # input = Editor::MarkdownHandler.call("app/views/markdown/index.md")
+
+      # markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+      # @output = markdown.render ERB.new(input).result(binding)
     end
 
     # GET /posts/1
-    def show; end
+    def show
+      input = File.read 'app/views/markdown/index.md'
+
+      @input = Editor::MarkdownHandler.new.convert_markdown(input)
+    end
 
     # GET /posts/new
     def new
       @post = current_author.posts.build
+      @markdown = RichTextService.new.markdown
     end
 
     # GET /posts/1/edit

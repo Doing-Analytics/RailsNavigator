@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+  <%= @markdown.render("This is *bongos*, indeed.") %>
+
   <div>
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
