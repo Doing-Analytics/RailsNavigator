@@ -75,3 +75,5 @@ group :test do
   gem 'database_cleaner'
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
 end
+
+gem "tailwindcss-rails", "~> 2.0"
