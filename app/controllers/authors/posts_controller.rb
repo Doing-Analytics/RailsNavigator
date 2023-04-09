@@ -15,13 +15,12 @@ module Authors
     def show
       input = File.read 'app/views/markdown/index.md'
 
-      @input = Editor::MarkdownHandler.new.convert_markdown(input)
+      @input = Editor::MarkdownHandler.new.convert_markdown(input).html_safe
     end
 
     # GET /posts/new
     def new
       @post = current_author.posts.build
-      @markdown = RichTextService.new.markdown
     end
 
     # GET /posts/1/edit

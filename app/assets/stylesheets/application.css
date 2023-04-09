@@ -13,3 +13,130 @@
  *= require_tree .
  *= require_self
  */
+
+
+.markdown > * {
+  color: #555;
+  font-family: -apple-system-font, sans-serif;
+}
+
+.markdown > p {
+  letter-spacing: 1px !important;
+  line-height: 28px !important;
+  min-height: 1em !important;
+  box-sizing: border-box !important;
+  word-wrap: break-word !important;
+  text-align: left;
+  margin: 20px 0px !important;
+}
+
+.markdown > blockquote {
+  border-left: 10px solid rgba(128, 128, 128, 0.075);
+  background-color: rgba(190, 188, 188, 0.05);
+  padding: 13px 15px !important;
+  margin: 0px;
+}
+
+.markdown > blockquote p {
+  color: #898989;
+  margin: 0px;
+}
+
+.markdown > strong {
+  font-weight: 700;
+  color: #bf360c;
+}
+
+.markdown > body {
+  font-size: 15px;
+  padding: 0 30px;
+}
+
+.markdown > pre {
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  word-wrap: break-word;
+  padding: 12px 13px;
+  font-size: 13px;
+  color: #898989;
+}
+
+.markdown > h1, .markdown > h2, .markdown > h3, .markdown > h4, .markdown > h5, .markdown > h6 {
+  word-break: break-all !important;
+  margin: 20px 0;
+  line-height: 1.2;
+  text-align: left;
+  font-weight: bold;
+}
+
+.markdown > h1 {
+  font-size: 20px !important;
+}
+
+.markdown > h2 {
+  font-size: 18px !important;
+}
+
+.markdown > h3 {
+  font-size: 16px;
+}
+
+.markdown > h4 {
+  font-size: 15px;
+}
+
+.markdown > a {
+  color: #4183C4 !important;
+  text-decoration: none !important;
+}
+
+.markdown > ul, .markdown > ol {
+  padding-left: 30px;
+  list-style-type: disc;
+  list-style-color: red;
+  list-style-image: none;
+  padding-left: 30px;
+}
+
+.markdown > li {
+  line-height: 24px;
+}
+
+.markdown > hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown > pre {
+  background: #f2f2f2 !important;
+  padding: 12px 13px;
+  overflow: auto;
+}
+
+.markdown > .code-block {
+  color: #a71d5d;
+  margin: 10px;
+  background-color: rgba(150, 148, 148, 0.34);
+  overflow: auto;
+  border-radius: 5px 5px 0px 0px ;
+
+}
+.markdown >.code-block> span {
+  padding-left: 5px;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  overflow: auto;
+}
+
+.markdown > pre .code {
+  color: #a71d5d;
+  padding: 0;
+  background-color: none;
+}

@@ -1,4 +1,6 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green" class="text-5xl"><%= notice %></p>
+
+<h1 class="text-5xl font-bold underline ">Posts</h1>
 
 <%= render @post %>
 
@@ -9,5 +11,7 @@
   <%= button_to "Destroy this post", @post, method: :delete %>
 </div>
 <% console %>
-<%= @input.html_safe %>
 
+<div class="markdown bg-gray-100">
+  <%= @input %>
+</div>
