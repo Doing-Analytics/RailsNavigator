@@ -5,8 +5,8 @@ module Editor
         <<~HTML
           <div class=' markdown bg-gray-100 p-4 rounded-md dark:bg-slate-800 ' data-lang='#{language}'>
             <div class="code-block">
-              <span class=''>#{language}</span>
-              #{CodeRay.scan(code, language).div}
+              <span class='code-lan'>#{language}</span>
+              #{CodeRay.scan(code, language).div(line_numbers: :table)}
             </div>
           </div>
         HTML
